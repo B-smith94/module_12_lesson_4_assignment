@@ -1,6 +1,7 @@
 import { Col, Form, Button, Alert } from "react-bootstrap";
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useState, useEffect } from 'react'
+import React from "react";
 import { useNavigate, useParams} from "react-router-dom";
 
 const UpdatePost = async (post) => {
@@ -17,7 +18,7 @@ const UpdatePost = async (post) => {
     return resopnse.json();
 }
 
-const UpdatePostMutation = ({ post }) => {
+const UpdatePostMutation = () => {
     const { id } = useParams();
     const queryClient = useQueryClient();
     const navigate = useNavigate();
@@ -89,5 +90,5 @@ const UpdatePostMutation = ({ post }) => {
         </div>
     )
 }
-
-export default UpdatePostMutation;
+                // Task 4
+export default React.memo(UpdatePostMutation);

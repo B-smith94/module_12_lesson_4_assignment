@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import ViewPosts from './componenets/ViewPosts';
-import CreatePost from './componenets/CreatePost';
-import UpdatePostMutation from './componenets/UpdatePost';
+import ViewPosts from './components/ViewPosts';
+import CreatePost from './components/CreatePost';
+import UpdatePostMutation from './components/UpdatePost';
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
