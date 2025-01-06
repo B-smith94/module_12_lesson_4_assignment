@@ -1,4 +1,3 @@
-// Task 3
 import { Col, Form, Button, Alert } from "react-bootstrap";
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useState, useEffect } from 'react'
@@ -56,7 +55,7 @@ const UpdatePostMutation = ({ post }) => {
     return (
         <div>
              {mutation.isError && <Alert variant="danger">An error occurred: {mutation.error.message}</Alert>}
-             {showSuccessAlert && <Alert variant="success">Post created successfully</Alert>}
+             {showSuccessAlert && <Alert variant="success">Post updated successfully</Alert>}
              <h3>Edit Post {id}</h3>
              <Col md={{ span: 6, offset: 3 }}>
                 <Form onSubmit={handleSubmit}>
